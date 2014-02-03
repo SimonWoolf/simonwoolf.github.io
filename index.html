@@ -7,43 +7,7 @@
     <meta name="author" content="Simon Woolf">
 
     <link href="http://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.min.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
-
-      h1 {
-        margin: 40px 0;
-        font-size: 4rem;
-        line-height: 1;
-      }
-
-      h1 > small {
-        font-size: 40%;
-      }
-
-      .social {
-        height: 3rem;
-        width: 3rem;
-      }
-
-      .social-button {
-        padding: 0px;
-        background-color: transparent;
-        border-radius: 5rem;
-      }
-
-      .social-button:hover {
-        background-color: black;
-      }
-
-      .social:hover {
-        -webkit-filter: invert(100%);
-        /* hack for firefox: */
-        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-      }
-    </style>
+    <link href="assets/stylesheet.css" rel="stylesheet">
   </head>
 
   <body>
@@ -57,7 +21,6 @@
       <div class="medium-4 columns text-justify">
         <h2>Programming</h2>
         <p>Currently doing a programming and web development bootcamp, focusing on Ruby. Have also used Python for mathematical programming. </p>
-        <p><a class="button round" href="https://github.com/SimonWoolf">View github &raquo;</a></p>
       </div>
       <div class="medium-4 columns text-justify">
         <h2>Tutoring</h2>
@@ -77,28 +40,31 @@
         <div class="row">
           <div class="small-3 columns">
             <a href="https://github.com/SimonWoolf" class="social-button button">
-              <img src='assets/github.png' class="social">
+              <img src="assets/github.png" alt="github" class="social-img">
             </a>
+            <p class="caption hide-for-small-only"><a href="https://github.com/SimonWoolf">Github</a></p>
           </div>
           <div class="small-3 columns">
-            <a href="#" class="button">A</a>
+            <a href="https://twitter.com/SEMW" class="social-button button">
+              <img src="assets/twitter.png" alt="twitter" class="social-img">
+            </a>
+            <p class="caption hide-for-small-only"><a href="https://twitter.com/SEMW">Twitter</a></p>
           </div>
           <div class="small-3 columns">
-            <a href="#" class="button">A</a>
+            <a href="mailto:simon@simonwoolf.net" class="social-button button">
+              <img src="assets/mail.png" alt="mail" class="social-img">
+            </a>
+            <p class="caption hide-for-small-only"><a href="mailto:simon@simonwoolf.net">Email</a></p>
           </div>
           <div class="small-3 columns">
-            <a href="#" class="button">A</a>
+            <a href="skype:coileys?chat&topic=from-simonwoolf.net" class="social-button button">
+              <img src="assets/skype.png" alt="skype" class="social-img">
+            </a>
+            <p class="caption hide-for-small-only"><a href="skype:coileys?chat&topic=from-simonwoolf.net">Skype</a></p>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="row">
-      <div class="medium-12 columns">
-        <h3>Email me at simon@<span style="display:none">null</span>simonwoolf.net</h3>
-      </div>
-    </div>
-
 
     <hr>
 

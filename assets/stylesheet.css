@@ -1,34 +1,53 @@
-      body {
-        padding-top: 20px;
-        padding-bottom: 60px;
-      }
+@import url("http://fonts.googleapis.com/css?family=Abel");
 
-      h1 {
-        margin: 40px 0;
-        font-size: 4rem;
-        line-height: 1;
-      }
+body {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
 
-      h1 > small {
-        font-size: 40%;
-      }
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Abel";
+}
 
-      .social {
-        height: 3rem;
-        width: 3rem;
-      }
+h1 {
+  margin: 40px 0;
+  font-size: 4rem;
+  line-height: 1;
+}
 
-      .social-button {
-        padding: 0px;
-        background-color: transparent;
-      }
+h1 > small {
+  font-size: 40%;
+}
 
-      .social-button:hover {
-        background-color: black;
-      }
+.social-img {
+  height: 3rem;
+  width: 3rem;
+}
 
-      .social:hover {
-        -webkit-filter: invert(100%);
-        /* hack for firefox: */
-        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
-      }
+.social-button {
+  padding: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  width: 3rem;
+  display: block;
+}
+
+.social-button:hover {
+  background-color: black;
+  transition: background-color 1s;
+}
+
+.social-img:hover {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  /* hack for firefox, which doesn't support the invert filter: */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.caption {
+  text-align: center;
+  font-family: "Abel";
+}
