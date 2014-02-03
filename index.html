@@ -22,6 +22,27 @@
       h1 > small {
         font-size: 40%;
       }
+
+      .social {
+        height: 3rem;
+        width: 3rem;
+      }
+
+      .social-button {
+        padding: 0px;
+        background-color: transparent;
+        border-radius: 5rem;
+      }
+
+      .social-button:hover {
+        background-color: black;
+      }
+
+      .social:hover {
+        -webkit-filter: invert(100%);
+        /* hack for firefox: */
+        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+      }
     </style>
   </head>
 
@@ -36,11 +57,11 @@
       <div class="medium-4 columns text-justify">
         <h2>Programming</h2>
         <p>Currently doing a programming and web development bootcamp, focusing on Ruby. Have also used Python for mathematical programming. </p>
-        <p><a class="button round" href="https://github.com/SimonWoolf">View github &raquo;</a></p> 
+        <p><a class="button round" href="https://github.com/SimonWoolf">View github &raquo;</a></p>
       </div>
       <div class="medium-4 columns text-justify">
         <h2>Tutoring</h2>
-        <p>I am available to tutor KS3, GCSE, and A-level students in Mathematics and Physics. 
+        <p>I am available to tutor KS3, GCSE, and A-level students in Mathematics and Physics.
         See <a href="http://www.tutorhunt.com/users/simonwoolf">my page on tutorhunt</a> for more information.</p>
         <!-- <p><a class="btn" href="#">View details &raquo;</a></p> -->
       </div>
@@ -55,7 +76,9 @@
       <div class="medium-6 medium-offset-3">
         <div class="row">
           <div class="small-3 columns">
-            <a href="#" class="button">A</a>
+            <a href="https://github.com/SimonWoolf" class="social-button button">
+              <img src='assets/github.png' class="social">
+            </a>
           </div>
           <div class="small-3 columns">
             <a href="#" class="button">A</a>
