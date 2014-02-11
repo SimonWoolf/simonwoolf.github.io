@@ -25,20 +25,19 @@ h1 > small {
 }
 
 .social-button {
-  padding: 0px;
+  padding: 1rem;
   margin-left: auto;
   margin-right: auto;
-  background-color: transparent;
-  width: 3rem;
+  background-color: white;
   display: block;
 }
 
 .social-button:hover {
-  background-color: black;
-  transition: background-color 1s;
+  /*background-color: black;*/
+  /*transition: background-color 1s;*/
 }
 
-.social-img:hover {
+.social-button:hover, .social-img:hover {
   filter: invert(100%);
   -webkit-filter: invert(100%);
   /* hack for firefox, which doesn't support the invert filter: */
