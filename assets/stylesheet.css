@@ -56,3 +56,8 @@ h1 > small {
   text-align: center;
   font-family: "Abel";
 }
+
+.pgp {
+  font-family: "Abel";
+  font-size: 85%;
+}
