@@ -19,6 +19,11 @@ h1 > small {
   font-size: 40%;
 }
 
+.lefttitle {
+  text-align: right;
+  margin-top: -0.3em;
+}
+
 .social-col {
   padding: 0;
 }
