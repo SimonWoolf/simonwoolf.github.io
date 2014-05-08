@@ -24,6 +24,11 @@ h1 > small {
   margin-top: -0.3em;
 }
 
+#hireme {
+  padding: 0 0.5em;
+  margin: 0;
+}
+
 .social-col {
   padding: 0;
 }
