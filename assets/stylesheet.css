@@ -24,9 +24,16 @@ h1 > small {
   margin-top: -0.3em;
 }
 
-#hireme {
-  padding: 0 0.5em;
+.inlinebtn {
+  padding: 0 0.5em 0.2em 0.5em;
   margin: 0;
+  background-color: #BFD;
+  border-radius: 1em;
+}
+
+.inlinebtn:hover {
+  background-color: #8DA;
+  transition: all 0.5s;
 }
 
 .social-col {
