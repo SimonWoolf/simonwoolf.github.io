@@ -1,0 +1,80 @@
+@import url("http://fonts.googleapis.com/css?family=Abel");
+
+body {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Abel";
+}
+
+h1 {
+  margin: 40px 0;
+  font-size: 4em;
+  line-height: 1;
+}
+
+h1 > small {
+  font-size: 40%;
+}
+
+.lefttitle {
+  text-align: right;
+  margin-top: -0.3em;
+}
+
+.inlinebtn {
+  padding: 0 0.5em 0.2em 0.5em;
+  margin: 0;
+  background-color: #BFD;
+  border-radius: 1em;
+}
+
+.inlinebtn:hover {
+  background-color: #8DA;
+  transition: all 0.5s;
+}
+
+.social-col {
+  padding: 0;
+}
+
+.social-img {
+  height: 3em;
+  width: 3em;
+}
+
+.social-button {
+  padding: 0.75em;
+  height: 4.5em;
+  width: 4.5em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  display: block;
+}
+
+.social-button:hover {
+  background-color: white; /* override foundation default */
+  transition: all 1s;
+}
+
+.social-button:hover {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  /* hack for firefox, which doesn't support the invert filter: */
+  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'invert\'><feColorMatrix in='SourceGraphic' type='matrix' values='-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0'/></filter></svg>#invert");
+  transition: all 1s;
+  -webkit-transition: all 1s;
+}
+
+.caption {
+  text-align: center;
+  font-family: "Abel";
+}
+
+.pgp {
+  font-family: "Abel";
+  font-size: 85%;
+}

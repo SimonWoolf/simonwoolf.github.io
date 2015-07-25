@@ -1,145 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Simon Woolf</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Simon Woolf">
+---
+layout: default
+---
 
-    <link href="http://cdn.jsdelivr.net/foundation/5.0.2/css/foundation.min.css" rel="stylesheet">
-    <link href="assets/stylesheet.css" rel="stylesheet">
-  </head>
+<div class="home">
 
-  <body>
-    <div class="row show-for-large-up">
-      <div class="large-4 columns">
-        <h1>Simon&nbsp;Woolf</h1>
-      </div>
-      <div class="large-8 columns">
-        <h1><small>Maths, Physics, Programming, Law</small></h1>
-      </div>
-    </div>
-    <!-- for small screens, have title & subtitle in a single element -->
-    <div class="row hide-for-large-up">
-      <div class="small-12 columns">
-        <h1>Simon Woolf<small>Maths, Physics, Programming, Law</small></h1>
-      </div>
-    </div>
+  <h1 class="page-heading">Posts</h1>
 
-    <div class="row">
-      <div class="medium-4 columns">
-        <h2 class="lefttitle">Programming</h2>
-      </div>
-      <div class="medium-8 columns text-justify">
-        <p>Young [programmer|maths geek|physics geek]. Elixir dev at ably.io. Before that, Ruby on Rails dev at Econsultancy.
-        Email me at <a href="mailto:simon@simonwoolf.net">simon@simonwoolf.net</a>
-        to talk about anything&nbsp;:)</p>
-      </div>
-    </div>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    <div class="row">
-      <div class="medium-4 columns">
-        <h2 class="lefttitle">Projects</h2>
-      </div>
-      <div class="medium-4 columns text-justify">
-        <h3>Disability Update</h3>
-        <p>Website and case archive for Monika Sobiecki and Spencer Keen's Disability
-        Discrimination Update, done on contract. Source publicly available by their 
-        kind permission.
-        <a href="http://disability-discrimination.herokuapp.com/">Site</a> &middot; 
-        <a href="https://github.com/SimonWoolf/disability-discrimination-update">Source</a></p>
-      </div>
-      <div class="medium-4 columns text-justify">
-        <h3>WebSudoku</h3>
-        <p>Sudoku webapp. Just for fun (done at Makers). Neat recursive solver/generator.
-        <a href="http://sudoku.simonwoolf.net/">Site</a> &middot; 
-        <a href="https://github.com/SimonWoolf/sudoku">Source</a></p>
-      </div>
-    </div>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-    <div class="row">
-      <div class="medium-4 medium-offset-4 columns text-justify">
-        <h3>Websandbox</h3>
-        <p>'Html-&amp;-css made fun' app. Everyone has their sandbox, they or their
-        friends can edit it. Click an element for a
-        pop-up that lets you edit its HTML and CSS. Fully versioned &amp; revertable.
-        Done as a project at Makers.
-        <a href="https://websandbox.herokuapp.com/">Site</a> &middot;
-        <a href="https://github.com/SimonWoolf/websandbox">Source</a></p>
-      </div>
-      <div class="medium-4 columns text-justify">
-        <h3>Markov play generator</h3>
-        <p>Select what texts you want to use as inputs, and click 'analyze'. It'll
-        look at the word just before the cursor position and give you the top 10
-        suggestions for the next word as button, click a word to insert it.
-        <a href="http://markov.simonwoolf.net">Site</a> &middot;
-        <a href="https://github.com/SimonWoolf/markov-text-playground">Source</a></p>
-        </p>
-      </div>
-    </div>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
-    <br>
-
-    <div class="row">
-      <div class="medium-4 columns">
-        <h2 class="lefttitle">Tutoring</h2>
-      </div>
-      <div class="medium-4 columns text-justify">
-        <p>As of June 2014, I am no longer available for maths and physics tutoring, as I
-        am working full-time. For reference, here is
-        <a href="http://www.tutorhunt.com/users/simonwoolf">my page on tutorhunt</a></p>
-      </div>
-      <div class="medium-4 columns text-justify">
-        <blockquote>We highly recommend Simon as a diligent and friendly tutor.<cite><a href="http://www.tutorhunt.com/users/simonwoolf">Kathleen</a></cite></blockquote>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="large-6 large-offset-3 medium-8 medium-offset-2 columns">
-        <div class="row">
-          <div class="medium-2 medium-offset-1 small-4 social-col columns">
-            <a href="https://github.com/SimonWoolf" class="round social-button button">
-              <img src="assets/github.png" alt="github" class="social-img">
-            </a>
-            <p class="caption"><a href="https://github.com/simonwoolf">Github</a></p>
-          </div>
-          <div class="medium-2 small-4 social-col columns">
-            <a href="https://twitter.com/SEMW" class="round social-button button">
-              <img src="assets/twitter.png" alt="twitter" class="social-img">
-            </a>
-            <p class="caption"><a href="https://twitter.com/SEMW">Twitter</a></p>
-          </div>
-          <div class="medium-2 small-4 social-col columns">
-            <a href="mailto:simon@simonwoolf.net" class="round social-button button">
-              <img src="assets/mail.png" alt="mail" class="social-img">
-            </a>
-            <p class="caption"><a href="mailto:simon@simonwoolf.net">Email</a></p>
-          </div>
-          <div class="medium-2 small-4 medium-offset-0 small-offset-2 social-col columns">
-            <a href="https://github.com/SimonWoolf/cv" class="round social-button button">
-              <img src="assets/cv.png" alt="CV" class="social-img">
-            </a>
-            <p class="caption"><a href="https://github.com/SimonWoolf/cv">CV</a></p>
-          </div>
-          <div class="medium-2 small-4 social-col columns end">
-            <a href="https://www.linkedin.com/profile/view?id=316010039" class="round social-button button">
-              <img src="assets/linkedin.png" alt="linkedin" class="social-img">
-            </a>
-            <p class="caption"><a href="https://www.linkedin.com/profile/view?id=316010039">Linkedin</a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <hr>
-
-    <div class="row">
-      <div class="medium-12 columns">
-        <p class="pgp"><a href="/simonwoolf.asc">Public key</a></p>
-      </div>
-    </div>
-    <!--[if (lt IE 9) & (!IEMobile)]>
-      <link href="assets/ie8.css" rel="stylesheet">
-    <![endif]-->
-  </body>
-</html>
+</div>
