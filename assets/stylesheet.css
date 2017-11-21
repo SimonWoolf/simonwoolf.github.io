@@ -1,12 +1,10 @@
-@import url("http://fonts.googleapis.com/css?family=Abel");
-
 body {
   padding-top: 20px;
   padding-bottom: 60px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: "Abel";
+  font-family: "Abel", sans-serif;
 }
 
 h1 {
@@ -71,10 +69,10 @@ h1 > small {
 
 .caption {
   text-align: center;
-  font-family: "Abel";
+  font-family: "Abel", sans-serif;
 }
 
 .pgp {
-  font-family: "Abel";
+  font-family: "Abel", sans-serif;
   font-size: 85%;
 }
